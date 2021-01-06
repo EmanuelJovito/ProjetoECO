@@ -1,0 +1,71 @@
+main {
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 70px;
+  width: 100%;
+  height: 100%;
+}
+
+.container-top {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  height: 62%;
+}
+
+.container-top p {
+  color: var(--secondary);
+  font-size: 3.7rem;
+  line-height: 4.6rem;
+  letter-spacing: 1px;
+  font-weight: 400;
+  padding-right: 45px;
+}
+
+.container-right {
+  width: 50%;
+  height: 100%;
+}
+
+.container-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 47%;
+  height: 100%;
+}
+
+.container-buttons {
+  background-color: black;
+  width: 100%;
+  height: 20%;
+}
+
+.button {
+  display: flex;
+  width: 100%;
+  height: 25%;
+}
+
+.search {
+  color: white;
+  display: flex;
+}
+
+.truck {
+  color: white;
+}
+
+.container-right img {
+  width: 650px;
+  height: 575px;
+}

@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Color default */
+  --primary: #2C9B5F;
+  --secondary: #125C34;
+  --terceary: #ffffff;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: Poppins, sans-serif;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+@media(max-width:768px) {
+  html {
+    font-size: 50%;
+  }
+}
