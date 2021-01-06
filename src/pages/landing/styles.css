@@ -26,7 +26,6 @@ main {
   color: var(--secondary);
   font-size: 3.7rem;
   line-height: 4.6rem;
-  letter-spacing: 1px;
   font-weight: 400;
   padding-right: 45px;
 }
