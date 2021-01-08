@@ -6,8 +6,8 @@
 
 :root {
   /* Color default */
-  --primary: #2C9B5F;
-  --secondary: #125C34;
+  --primary: #2c9b5f;
+  --secondary: #125c34;
   --terceary: #ffffff;
 }
 
@@ -21,9 +21,10 @@ body {
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
+  background-color: var(--primary);
 }
 
-@media(max-width:768px) {
+@media (max-width: 768px) {
   html {
     font-size: 50%;
   }
