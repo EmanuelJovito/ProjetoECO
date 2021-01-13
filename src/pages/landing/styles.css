@@ -53,6 +53,10 @@ main {
   align-items: center;
 }
 
+.link-findEco {
+  text-decoration: none;
+}
+
 .button {
   display: flex;
   width: 100%;
