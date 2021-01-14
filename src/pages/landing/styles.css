@@ -72,6 +72,7 @@ main {
 
 .truck {
   color: var(--terceary);
+  text-decoration: none;
 }
 
 .truck p {

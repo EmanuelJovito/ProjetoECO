@@ -1,0 +1,16 @@
+.container-top {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+
+.container-top .logo {
+  width: 114px;
+  height: 36px;
+}
