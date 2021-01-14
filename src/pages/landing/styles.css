@@ -21,11 +21,11 @@ main {
   height: 62%;
 }
 
-.container-top .logo {
+.logo {
   width: 85%;
 }
 
-.container-top .subtitle {
+.subtitle {
   color: var(--secondary);
   font-size: 3.7rem;
   line-height: 4.6rem;
@@ -53,10 +53,6 @@ main {
   align-items: center;
 }
 
-.link-findEco {
-  text-decoration: none;
-}
-
 .button {
   display: flex;
   width: 100%;
@@ -71,6 +67,7 @@ main {
 .search {
   color: var(--terceary);
   display: flex;
+  text-decoration: none;
 }
 
 .truck {
@@ -86,15 +83,15 @@ main {
   height: 100%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1016px) {
   main {
     overflow: hidden;
   }
-  .container-left .subtitle {
+  .subtitle {
     font-size: 2.1rem;
   }
-  .container-left .container-top {
-    height: 55%;
+  .container-top {
+    height: 65%;
   }
   .container-left {
     height: 83%;
@@ -104,79 +101,136 @@ main {
   }
 }
 
-@media (max-width: 425px) {
-  main {
-    overflow: auto;
-  }
-  .wrapper {
-    /* padding: 60px 20px 20px 20px; */
-    padding: 0;
-    flex-direction: column;
-    height: 100vh;
-    width: 90%;
-    margin: 5vh auto;
-  }
-  .container-left .logo {
-    width: 80%;
-  }
-  .container-left .subtitle {
-    font-size: 2.1rem;
-    padding: 0 10%;
-  }
-  .container-left .container-top {
-    height: 50%;
-    width: 100%;
-    align-items: center;
-  }
-  .container-left .container-buttons {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    width: 80%;
-    height: 40%;
-  }
-  .container-left .container-buttons .button {
-    width: max-content;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    padding: 25px 10px;
-    
-  } 
-  .container-left .container-buttons .button:active {
-    cursor: pointer;
-    border: 1px solid var(--terceary);;
-    border-radius: 5px;
-    transition: all 1s ease;
-  }
-  .container-left .container-buttons .search {
-    margin-bottom: 15px;
+@media (max-width: 768px) {
+  .logo {
+    width: 70%;
   }
   .container-left {
-    height: 55vh;
-    width: 100%;
-    align-items: center;
-  }
-  .container-right {
-    display: flex;
-    justify-content: center;
-    order: -1;
-    height: 40vh;
     width: 100%;
   }
-  .container-right img {
-    height: 100%;
-    width: 85%;
-  }
-}
-@media (max-width: 375px) {
-  .container-left .container-top .logo {
-    width: 65%;
-  }
-  .container-left .subtitle {
-    font-size: 1.8rem;
+  .subtitle {
+    font-size: 3rem;
     text-align: center;
+    padding-top: 30px;
+    padding-right: 20px;
+  }
+  .container-top {
+    height: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .container-right {
+    display: none;
+  }
+  .container-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .button {
+    width: max-content;
+  }
+}
+
+@media (max-width: 510px) {
+  .container-left {
+    width: 100%;
+  }
+  .subtitle {
+    font-size: 3rem;
+    text-align: center;
+    padding-left: 40px;
+  }
+  .container-top {
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .container-right {
+    display: none;
+  }
+  .container-buttons {
+    width: 100%;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .button {
+    width: max-content;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 490px) {
+  .container-top {
+    height: 60%;
+    display: flex;
+    align-items: center;
+  }
+  .container-buttons {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 462px) {
+  .wrapper {
+    width: 100%;
+  }
+  .subtitle {
+    font-size: 2.8rem;
+    padding-top: 30px;
+  }
+  .container-top {
+    width: 100%;
+    height: 30%;
+  }
+  .container-right {
+    display: none;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 375px) {
+  .subtitle {
+    font-size: 2.5rem;
+    padding: 17px;
+  }
+}
+
+@media (max-width: 349px) {
+  .logo {
+    width: 100%;
+  }
+  .subtitle {
+    font-size: 2.2rem;
+    padding: 23px;
+  }
+}
+
+@media (max-width: 340px) {
+  .subtitle {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  .wrapper {
+    padding: 60px 30px
+  }
+  .logo {
+    width: 100%;
+  }
+  .subtitle {
+    font-size: 2.2rem;
+    padding: 10px;
   }
 }
