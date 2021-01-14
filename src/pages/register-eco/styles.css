@@ -14,3 +14,11 @@
   width: 114px;
   height: 36px;
 }
+
+.formulario {
+  display: block;
+  width: 50%;
+  height: 500px;
+  background-color: white;
+  border: 1px solid black;
+}
