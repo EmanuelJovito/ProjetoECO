@@ -10,16 +10,95 @@
   padding: 40px 0;
 }
 
+.wrapper {
+  background-color: white;
+  width: min(90%, 800px);
+  height: 100%;
+  margin: 0 auto;
+  padding: 0.5rem;
+
+  border-radius: 5px;
+}
+
 .container-top .logo {
   width: 114px;
   height: 36px;
 }
 
 .container-form {
-  width: min(90%, 800px);
-  height: 100%;
-  margin: 0 auto;
+  height: auto;
+  margin: 2rem 5rem;
+}
 
-  background: white;
-  border: 1px solid black;
+.container-form h1 {
+  padding: 1rem 0rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--border-primary);
+  color: var(--secondary);
+}
+
+label{
+  margin-top: 1rem;
+  color: var(--text-primary);
+}
+ 
+input {
+  height: 5rem;
+  background-color: #FAFAFC;
+  margin: 1rem 0 ;
+  padding: 1rem;
+  
+  border: 1px solid var(--border-primary);
+  border-radius: 0.5rem;
+}
+
+input:focus {
+  outline-color: var(--primary);
+}
+
+.inputPosition {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.nameInput {
+  display: flex;
+  flex-direction: column;
+  width: 40rem;
+  margin-right: 1rem;
+}
+
+.cnpjInput {
+  display: flex;
+  width: 40rem;
+  flex-direction: column;
+}
+
+.imgInput {
+  display: flex;
+  flex-direction: column;
+}
+ 
+.whatsappInput {
+  display: flex;
+  flex-direction: column;
+}
+
+.enderecoInput {
+  display: flex;
+  flex-direction: column;
+  width: 40rem;
+  margin-right: 1rem;
+}
+
+.bairroInput {
+  display: flex;
+  width: 40rem;
+  flex-direction: column;
+}
+
+.compInput {
+  display: flex;
+  flex-direction: column;
 }
