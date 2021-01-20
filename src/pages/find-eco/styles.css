@@ -37,6 +37,7 @@ main .container-title h2 {
 
 main .container-title p {
   color: var(--terceary);
+  margin-bottom: 1rem;
 }
 
 main .wrapper {
