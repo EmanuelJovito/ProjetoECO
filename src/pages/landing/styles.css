@@ -7,8 +7,9 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 6.0rem 7.0rem;
-  width: 100%;
+
+  margin: 5rem auto 0;
+  width: 90%;
   height: 100%;
 }
 
@@ -32,6 +33,7 @@ main {
   font-weight: 400;
   padding-right: 4.5rem;
   width: 100%;
+  margin: 4rem 0 7rem;
 }
 
 .container-right {
@@ -54,10 +56,12 @@ main {
 }
 
 .button {
-  display: flex;
   width: 100%;
   height: 25%;
+
+  display: flex;
   margin-bottom: 3.5rem;
+  align-items: center;
 }
 
 .button img {
