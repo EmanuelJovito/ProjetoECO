@@ -44,8 +44,8 @@ const verification = () => {
   const inputs = document.querySelectorAll("input");
   const button = document.querySelector(".btnFinalizar");
   const mensage = document.querySelector(".messageErrorActive");
-  const errorScream = document.querySelector(".error")
-  const successScream = document.querySelector(".success")
+  const errorScream = document.querySelector(".error");
+  const successScream = document.querySelector(".success");
 
   button.addEventListener("click", () => {
     inputs.forEach((input) => {
@@ -53,17 +53,18 @@ const verification = () => {
         mensage.style.visibility = "visible";
         mensage.style.opacity = "1";
         // errorScream.style.display = "flex"
+      } else {
+        successScream.style.visibility = "visible";
+        successScream.style.opacity = "1";
       }
     });
-    successScream.style.visibility = "visible"
-    successScream.style.opacity = "1"
+
     setTimeout(() => {
       mensage.style.visibility = "hidden";
       mensage.style.opacity = "0";
-      successScream.style.visibility = "hidden"
-      successScream.style.opacity = "0"
+      successScream.style.visibility = "hidden";
+      successScream.style.opacity = "0";
     }, 2000);
-
   });
 };
 
