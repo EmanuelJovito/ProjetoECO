@@ -186,6 +186,15 @@ fieldset {
   .item {
     margin: 0.5rem;
   }
+
+
+  .message img{
+    width: 60%;
+  }
+  
+  .message p {
+    margin-top: 6rem;
+  }
 }
 
 @media (max-width: 514px) {
@@ -210,6 +219,12 @@ fieldset {
   .footer button {
     margin-top: 2rem;
   }
+
+  .message p {
+    font-size: 3rem;
+    margin: 2rem 2rem;
+    text-align: center;
+  }
 }
 
 @media (max-width: 430px) {
@@ -229,4 +244,33 @@ fieldset {
     margin-bottom: 1rem;
   }
 
+}
+
+
+.message {
+  display: flex;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+  backdrop-filter: blur(2px);
+}
+
+.message p {
+  margin-top: 3rem;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 600;
 }
