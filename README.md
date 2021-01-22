@@ -1,5 +1,5 @@
 ## 👨‍🏫Projeto
-**ECO** é um site que tem como objetivo de cadastrar e encontrar ecopontos de forma fácil e rápida.
+**ECO** é um site que tem o objetivo de cadastrar e encontrar ecopontos de forma fácil e rápida.
 <br />
 <br />
 <img src="https://github.com/EmanuelJovito/ProjetoECO/blob/main/src/assets/images/logo_eco.svg">
