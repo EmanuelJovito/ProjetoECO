@@ -1,241 +1,76 @@
 main {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
+
+  overflow: hidden;
+}
+ 
+.wrapper {
+  width: 90%;
+  height: 80%;
+  margin:  9rem auto 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-sizing: border-box;
 }
 
-.wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 
-  margin: 5rem auto 0;
-  width: 90%;
-  height: 100%;
+.container-left {
+  width: 50%;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .container-top {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  width: 100%;
-  height: 62%;
-}
-
-.logo {
-  width: 85%;
 }
 
 .subtitle {
+  width: 70%;
+  margin-top: 5rem;
+
+  font-size: 3rem;
   color: var(--secondary);
-  font-size: 3.7rem;
-  line-height: 4.6rem;
-  font-weight: 400;
-  padding-right: 4.5rem;
-  width: 100%;
-  margin: 4rem 0 7rem;
+}
+
+.logo{
+  width: 75%;
+}
+
+.container-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+
+  text-decoration: none;
+}
+
+.button p {
+  color: var(--terceary);
+}
+
+.button img {
+  margin-right: 1.5rem;
+}
+
+.search {
+  margin-bottom: 3rem;
 }
 
 .container-right {
   width: 50%;
-  height: 100%;
-}
-
-.container-left {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 47%;
-  height: 100%;
-}
-
-.container-buttons {
-  width: 100%;
-  height: 20%;
-  align-items: center;
-}
-
-.button {
-  width: 100%;
-  height: 25%;
-
-  display: flex;
-  margin-bottom: 3.5rem;
-  align-items: center;
-}
-
-.button img {
-  padding-right: 1.5rem;
-}
-
-.search {
-  color: var(--terceary);
-  display: flex;
-  text-decoration: none;
-}
-
-.truck {
-  color: var(--terceary);
-  text-decoration: none;
-}
-
-.truck p {
-  margin-left: -5px;
 }
 
 .container-right img {
-  width: 100%;
-  height: 100%;
-}
-
-@media (max-width: 1016px) {
-  main {
-    overflow: hidden;
-  }
-  .subtitle {
-    font-size: 2.1rem;
-  }
-  .container-top {
-    height: 65%;
-  }
-  .container-left {
-    height: 83%;
-  }
-  .container-right {
-    height: 83%;
-  }
-}
-
-@media (max-width: 768px) {
-  .logo {
-    width: 70%;
-  }
-  .container-left {
-    width: 100%;
-  }
-  .subtitle {
-    font-size: 3rem;
-    text-align: center;
-    padding-top: 3.0rem;
-    padding-right: 2.0rem;
-  }
-  .container-top {
-    height: 55%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .container-right {
-    display: none;
-  }
-  .container-buttons {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .button {
-    width: max-content;
-  }
-}
-
-@media (max-width: 510px) {
-  .container-left {
-    width: 100%;
-  }
-  .subtitle {
-    font-size: 3rem;
-    text-align: center;
-    padding-left: 4.0rem;
-  }
-  .container-top {
-    height: 60%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .container-right {
-    display: none;
-  }
-  .container-buttons {
-    width: 100%;
-    padding-right: 2.0rem;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .button {
-    width: max-content;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
-@media (max-width: 490px) {
-  .container-top {
-    height: 60%;
-    display: flex;
-    align-items: center;
-  }
-  .container-buttons {
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-}
-
-@media (max-width: 462px) {
-  .wrapper {
-    width: 100%;
-  }
-  .subtitle {
-    font-size: 2.8rem;
-    padding-top: 3.0rem;
-  }
-  .container-top {
-    width: 100%;
-    height: 30%;
-  }
-  .container-right {
-    display: none;
-    justify-content: space-between;
-  }
-}
-
-@media (max-width: 375px) {
-  .subtitle {
-    font-size: 2.5rem;
-    padding: 1.7rem;
-  }
-}
-
-@media (max-width: 349px) {
-  .logo {
-    width: 100%;
-  }
-  .subtitle {
-    font-size: 2.2rem;
-    padding: 2.3rem;
-  }
-}
-
-@media (max-width: 340px) {
-  .subtitle {
-    padding: 2.0rem;
-  }
-}
-
-@media (max-width: 320px) {
-  .wrapper {
-    padding: 6.0rem 3.0rem
-  }
-  .logo {
-    width: 100%;
-  }
-  .subtitle {
-    font-size: 2.2rem;
-    padding: 1.0rem;
-  }
+  width: 90%;
 }
