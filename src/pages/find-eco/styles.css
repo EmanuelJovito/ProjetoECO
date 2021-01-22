@@ -17,7 +17,6 @@
 
 main {
   width: 75%;
-  height: 100%;
   margin: 0 auto;
 }
 
@@ -137,7 +136,10 @@ main .wrapper {
 
 /* responsividade */
 
-@media (max-width: 932px) {
+@media (max-width: 933px) {
+  main {
+    margin-bottom: 3rem;
+  }
   .wrapper {
     grid-row-gap: 20px;
   }
